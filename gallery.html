@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hairstyle Gallery | Cece African Hair Braiding</title>
+  <meta name="description" content="Browse our African braiding gallery: knotless and box braids, Senegalese and passion twists, cornrows, Ghana and Fulani braids, updos, faux locs and kids styles.">
+  <meta name="theme-color" content="#24170f">
+  <!-- Open Graph (social sharing). Add og:url and og:image with full https:// URLs once the site has a domain. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cece African Hair Braiding">
+  <meta property="og:title" content="Hairstyle Gallery | Cece African Hair Braiding">
+  <meta property="og:description" content="Browse our African braiding gallery: knotless and box braids, Senegalese and passion twists, cornrows, Ghana and Fulani braids, updos, faux locs and kids styles.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: Cormorant Garamond (headings) + Jost (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Icons: Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Cece African Hair Braiding — home">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="11" y="11" width="18" height="18" transform="rotate(45 20 20)"/><path d="M20 1.5v6M20 32.5v6M1.5 20h6M32.5 20h6"/></g><rect x="16" y="16" width="8" height="8" transform="rotate(45 20 20)" fill="currentColor"/></svg>
+        <span class="brand__text"><span class="brand__name">Cece</span><span class="brand__tag">African Hair Braiding</span></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list"><li><a class="nav__link" href="index.html">Home</a></li><li><a class="nav__link" href="about.html">About</a></li><li><a class="nav__link" href="services.html">Services</a></li><li><a class="nav__link" href="gallery.html" aria-current="page">Gallery</a></li><li><a class="nav__link" href="contact.html">Contact</a></li></ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--sm header-cta" href="appointment.html">Book Appointment</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu (shown below 1100px) -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobile">
+      <ul class="mobile-menu__list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html" aria-current="page">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="appointment.html">Appointments</a></li></ul>
+    </nav>
+    <div class="mobile-menu__actions">
+      <a class="btn btn--gold btn--block" href="appointment.html"><i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Book an Appointment</a>
+      <a class="btn btn--outline-light btn--block" href="tel:+15551234567"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call (555) 123-4567</a>
+    </div>
+    <p class="mobile-menu__meta">Tue–Fri 9am–7pm · Sat 8am–6pm · Sun 12–5pm<br>1234 Placeholder Avenue, Suite 100, Your City, ST 00000</p>
+  </div>
+
+  <main id="main" tabindex="-1">
+
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true"><img src="assets/images/gallery/cornrow-pattern.jpg" alt="" width="960" height="720" fetchpriority="high"></div>
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Gallery</li></ol>
+        <h1>Style <em>Gallery</em></h1>
+        <p>A showcase of braids, twists, cornrows and more. Tap any photo to view it larger.</p>
+      </div>
+    </section>
+    <div class="pattern-band" aria-hidden="true"></div>
+
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="gallery-title">Hairstyle photos</h2>
+        <!-- HOW TO UPDATE: put new photos in assets/images/gallery/ and copy one <li class="gallery__item"> block.
+             data-category must be one of: braids, twists, cornrows, updos, locs, kids -->
+        <div class="filters" role="group" aria-label="Filter photos by style"><button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All Styles</button><button class="filter-btn" type="button" data-filter="braids" aria-pressed="false">Braids</button><button class="filter-btn" type="button" data-filter="twists" aria-pressed="false">Twists</button><button class="filter-btn" type="button" data-filter="cornrows" aria-pressed="false">Cornrows</button><button class="filter-btn" type="button" data-filter="updos" aria-pressed="false">Updos</button><button class="filter-btn" type="button" data-filter="locs" aria-pressed="false">Locs & Crochet</button><button class="filter-btn" type="button" data-filter="kids" aria-pressed="false">Kids</button></div>
+        <p class="visually-hidden" id="filter-status" aria-live="polite"></p>
+        <ul class="gallery" data-gallery role="list">
+          <li class="gallery__item" data-category="braids">
+            <button class="gallery__btn" type="button" data-title="Knotless Braids" data-category-label="Braids" data-full="assets/images/services/knotless-braids.jpg" aria-label="View larger: Knotless Braids">
+              <img src="assets/images/services/knotless-braids.jpg" alt="Woman with long, sleek knotless braids framing her face" width="944" height="1024" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Knotless Braids <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="twists">
+            <button class="gallery__btn" type="button" data-title="Senegalese Twists" data-category-label="Twists" data-full="assets/images/services/senegalese-twists.jpg" aria-label="View larger: Senegalese Twists">
+              <img src="assets/images/services/senegalese-twists.jpg" alt="Back view of long two-tone Senegalese twists in dark brown and honey blonde" width="960" height="960" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Senegalese Twists <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="cornrows">
+            <button class="gallery__btn" type="button" data-title="Straight-Back Cornrows" data-category-label="Cornrows" data-full="assets/images/services/cornrows.jpg" aria-label="View larger: Straight-Back Cornrows">
+              <img src="assets/images/services/cornrows.jpg" alt="Woman with neat straight-back cornrows and clear-framed glasses" width="960" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Straight-Back Cornrows <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="updos">
+            <button class="gallery__btn" type="button" data-title="Braided High Updo" data-category-label="Updos" data-full="assets/images/gallery/braided-updo.jpg" aria-label="View larger: Braided High Updo">
+              <img src="assets/images/gallery/braided-updo.jpg" alt="Woman smiling with box braids styled into a high updo" width="705" height="1024" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Braided High Updo <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="braids">
+            <button class="gallery__btn" type="button" data-title="Box Braids with Beads" data-category-label="Braids" data-full="assets/images/services/box-braids.jpg" aria-label="View larger: Box Braids with Beads">
+              <img src="assets/images/services/box-braids.jpg" alt="Black-and-white portrait of a woman wearing box braids finished with white beads" width="960" height="768" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Box Braids with Beads <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="kids">
+            <button class="gallery__btn" type="button" data-title="Kids Beaded Braids" data-category-label="Kids" data-full="assets/images/services/kids-braids.jpg" aria-label="View larger: Kids Beaded Braids">
+              <img src="assets/images/services/kids-braids.jpg" alt="Young girl with neat beaded braids resting her chin on her hands" width="1024" height="683" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Kids Beaded Braids <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="cornrows">
+            <button class="gallery__btn" type="button" data-title="Curved Ghana Braids" data-category-label="Cornrows" data-full="assets/images/services/ghana-braids.jpg" aria-label="View larger: Curved Ghana Braids">
+              <img src="assets/images/services/ghana-braids.jpg" alt="Side view of curved Ghana braids sweeping into a low bun" width="960" height="951" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Curved Ghana Braids <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="twists">
+            <button class="gallery__btn" type="button" data-title="Passion Twists" data-category-label="Twists" data-full="assets/images/services/passion-twists.jpg" aria-label="View larger: Passion Twists">
+              <img src="assets/images/services/passion-twists.jpg" alt="Smiling woman with soft shoulder-length twists and gold hoop earrings" width="772" height="1024" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Passion Twists <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="braids">
+            <button class="gallery__btn" type="button" data-title="Goddess Braids" data-category-label="Braids" data-full="assets/images/services/goddess-braids.jpg" aria-label="View larger: Goddess Braids">
+              <img src="assets/images/services/goddess-braids.jpg" alt="Woman wearing long braids accented with burgundy and loose curly strands" width="797" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Goddess Braids <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="locs">
+            <button class="gallery__btn" type="button" data-title="Waist-Length Locs" data-category-label="Locs & Crochet" data-full="assets/images/services/faux-locs.jpg" aria-label="View larger: Waist-Length Locs">
+              <img src="assets/images/services/faux-locs.jpg" alt="Back view of very long locs falling below the waist" width="683" height="1024" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Waist-Length Locs <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="updos">
+            <button class="gallery__btn" type="button" data-title="Cornrow Updo" data-category-label="Updos" data-full="assets/images/gallery/cornrow-updo.jpg" aria-label="View larger: Cornrow Updo">
+              <img src="assets/images/gallery/cornrow-updo.jpg" alt="Woman in a black dress wearing cornrows swept into an elegant updo" width="683" height="1024" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Cornrow Updo <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="cornrows">
+            <button class="gallery__btn" type="button" data-title="Patterned Cornrows" data-category-label="Cornrows" data-full="assets/images/gallery/cornrow-pattern.jpg" aria-label="View larger: Patterned Cornrows">
+              <img src="assets/images/gallery/cornrow-pattern.jpg" alt="Close-up of intricate patterned cornrows from above" width="960" height="720" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Patterned Cornrows <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="braids">
+            <button class="gallery__btn" type="button" data-title="Fulani Braids" data-category-label="Braids" data-full="assets/images/services/fulani-braids.jpg" aria-label="View larger: Fulani Braids">
+              <img src="assets/images/services/fulani-braids.jpg" alt="Fulani woman from Niger wearing traditional braids adorned with beads" width="960" height="640" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Fulani Braids <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="twists">
+            <button class="gallery__btn" type="button" data-title="Long Twists" data-category-label="Twists" data-full="assets/images/site/hero-braids-portrait.jpg" aria-label="View larger: Long Twists">
+              <img src="assets/images/site/hero-braids-portrait.jpg" alt="Woman with long twists looking over her shoulder outdoors" width="800" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Long Twists <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="kids">
+            <button class="gallery__btn" type="button" data-title="Kids Braids with Beads" data-category-label="Kids" data-full="assets/images/gallery/kids-braids-beads.jpg" aria-label="View larger: Kids Braids with Beads">
+              <img src="assets/images/gallery/kids-braids-beads.jpg" alt="Young girl with braids and colourful beads looking at the camera" width="730" height="1024" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Kids Braids with Beads <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="updos">
+            <button class="gallery__btn" type="button" data-title="Cornrows into a Braided Bun" data-category-label="Updos" data-full="assets/images/gallery/cornrows-bun.jpg" aria-label="View larger: Cornrows into a Braided Bun">
+              <img src="assets/images/gallery/cornrows-bun.jpg" alt="Back view of cornrows gathered into a braided bun" width="960" height="720" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Cornrows into a Braided Bun <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="locs">
+            <button class="gallery__btn" type="button" data-title="Crochet Twists" data-category-label="Locs & Crochet" data-full="assets/images/services/crochet-braids.jpg" aria-label="View larger: Crochet Twists">
+              <img src="assets/images/services/crochet-braids.jpg" alt="Stylist installing crochet twists onto a braided cornrow base" width="450" height="440" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Crochet Twists <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="cornrows">
+            <button class="gallery__btn" type="button" data-title="Fine Patterned Braids" data-category-label="Cornrows" data-full="assets/images/gallery/fine-braids.jpg" aria-label="View larger: Fine Patterned Braids">
+              <img src="assets/images/gallery/fine-braids.jpg" alt="Woman with fine braids in a curved pattern along her hairline" width="960" height="962" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Fine Patterned Braids <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="braids">
+            <button class="gallery__btn" type="button" data-title="Feed-In Braids" data-category-label="Braids" data-full="assets/images/services/feed-in-braids.jpg" aria-label="View larger: Feed-In Braids">
+              <img src="assets/images/services/feed-in-braids.jpg" alt="Woman with long feed-in braids sweeping back from her hairline" width="765" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Feed-In Braids <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="updos">
+            <button class="gallery__btn" type="button" data-title="Cornrows with Low Bun" data-category-label="Updos" data-full="assets/images/gallery/braided-heritage-2.jpg" aria-label="View larger: Cornrows with Low Bun">
+              <img src="assets/images/gallery/braided-heritage-2.jpg" alt="Smiling woman with cornrows leading into a full low bun" width="900" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Cornrows with Low Bun <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="cornrows">
+            <button class="gallery__btn" type="button" data-title="Men&#x27;s Cornrows" data-category-label="Cornrows" data-full="assets/images/gallery/cornrows-mono.jpg" aria-label="View larger: Men&#x27;s Cornrows">
+              <img src="assets/images/gallery/cornrows-mono.jpg" alt="Black-and-white photo of a man wearing two bold cornrows" width="794" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Men&#x27;s Cornrows <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="braids">
+            <button class="gallery__btn" type="button" data-title="Braided Fringe Style" data-category-label="Braids" data-full="assets/images/gallery/braided-heritage-1.jpg" aria-label="View larger: Braided Fringe Style">
+              <img src="assets/images/gallery/braided-heritage-1.jpg" alt="Woman wearing fine braids with a beaded fringe and colourful necklaces" width="800" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Braided Fringe Style <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="braids">
+            <button class="gallery__btn" type="button" data-title="Knotless Braids in Progress" data-category-label="Braids" data-full="assets/images/gallery/knotless-in-progress.jpg" aria-label="View larger: Knotless Braids in Progress">
+              <img src="assets/images/gallery/knotless-in-progress.jpg" alt="Knotless braids being installed, viewed from behind" width="900" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Knotless Braids in Progress <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="cornrows">
+            <button class="gallery__btn" type="button" data-title="Cornrows in Progress" data-category-label="Cornrows" data-full="assets/images/gallery/stitch-braids-closeup.jpg" aria-label="View larger: Cornrows in Progress">
+              <img src="assets/images/gallery/stitch-braids-closeup.jpg" alt="Stylist&#x27;s hands finishing a section of cornrows" width="675" height="1200" loading="lazy" decoding="async">
+              <span class="gallery__caption" aria-hidden="true">Cornrows in Progress <i class="fa-solid fa-expand"></i></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section cta texture-dark on-dark">
+      <div class="container cta__inner reveal">
+        <div class="ornament" aria-hidden="true"><span></span></div>
+        <h2 class="section-title">See a style you <em>want?</em></h2>
+        <p>Request an appointment and mention the photo you love in the comments.</p>
+        <div class="btn-row">
+          <a class="btn btn--gold" href="appointment.html"><i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Book an Appointment</a>
+          <a class="btn btn--outline-light" href="tel:+15551234567"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <div class="lightbox__top">
+      <span class="lightbox__count" aria-live="polite"></span>
+      <button class="lightbox__btn" type="button" data-lb-close aria-label="Close photo viewer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" alt="">
+      <button class="lightbox__btn lightbox__nav lightbox__nav--prev" type="button" data-lb-prev aria-label="Previous photo"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+      <button class="lightbox__btn lightbox__nav lightbox__nav--next" type="button" data-lb-next aria-label="Next photo"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+    <div class="lightbox__bottom">
+      <span class="lightbox__cat"></span>
+      <p class="lightbox__title"></p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="pattern-band" aria-hidden="true"></div>
+    <div class="texture-dark">
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <div>
+            <a class="brand" href="index.html" aria-label="Cece African Hair Braiding — home">
+              <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="11" y="11" width="18" height="18" transform="rotate(45 20 20)"/><path d="M20 1.5v6M20 32.5v6M1.5 20h6M32.5 20h6"/></g><rect x="16" y="16" width="8" height="8" transform="rotate(45 20 20)" fill="currentColor"/></svg>
+              <span class="brand__text"><span class="brand__name">Cece</span><span class="brand__tag">African Hair Braiding</span></span>
+            </a>
+            <p class="footer-about">Authentic African braiding with care, precision and heart. Protective styles for women, men and children.</p>
+            <ul class="socials "><li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Cece African Hair Braiding on Facebook (opens in a new tab)"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li><li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Cece African Hair Braiding on Instagram (opens in a new tab)"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li><li><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="Cece African Hair Braiding on TikTok (opens in a new tab)"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></li></ul>
+          </div>
+          <div>
+            <h2 class="footer-title">Explore</h2>
+            <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="appointment.html">Book an Appointment</a></li></ul>
+          </div>
+          <div>
+            <h2 class="footer-title">Popular Styles</h2>
+            <ul class="footer-links"><li><a href="services.html#knotless-braids">Knotless Braids</a></li><li><a href="services.html#box-braids">Box Braids</a></li><li><a href="services.html#goddess-braids">Goddess Braids</a></li><li><a href="services.html#fulani-braids">Fulani Braids</a></li><li><a href="services.html#senegalese-twists">Senegalese Twists</a></li><li><a href="services.html#kids-braids">Kids Braiding Styles</a></li></ul>
+          </div>
+          <div>
+            <h2 class="footer-title">Visit Us</h2>
+            <ul class="footer-contact">
+              <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>1234 Placeholder Avenue, Suite 100<br>Your City, ST 00000</span></li>
+              <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+15551234567">(555) 123-4567</a></li>
+              <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:hello@cecebraiding.com">hello@cecebraiding.com</a></li>
+            </ul>
+            <h2 class="footer-title mt-2">Hours</h2>
+            <ul class="hours"><li data-day="2"><span>Tuesday</span><span>9:00 AM – 7:00 PM</span></li><li data-day="3"><span>Wednesday</span><span>9:00 AM – 7:00 PM</span></li><li data-day="4"><span>Thursday</span><span>9:00 AM – 7:00 PM</span></li><li data-day="5"><span>Friday</span><span>9:00 AM – 7:00 PM</span></li><li data-day="6"><span>Saturday</span><span>8:00 AM – 6:00 PM</span></li><li data-day="0"><span>Sunday</span><span>12:00 PM – 5:00 PM</span></li><li data-day="1"><span>Monday</span><span class="closed">Closed</span></li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; <span data-year>2026</span> Cece African Hair Braiding. All rights reserved.</p>
+          <p><a href="credits.html">Photo credits</a> · <a href="appointment.html">Book an appointment</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
